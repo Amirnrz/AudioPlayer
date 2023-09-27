@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .3s ease;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10%);
+}
+
+.image-container {
+  width: 100%;
+  height: 50%;
+  /* background-image: url("./images/bloodborne.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-container{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 50%;
+  background: linear-gradient(rgb(106, 105, 105), rgb(208, 206, 206));
+}
+
+.info-title h2 {
+  font-size: 2rem;
+  color: aliceblue;
+  font-style: italic;
+  text-shadow: 0 0 10px black;
+}
+
+.info-btns {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-btns button {
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0 2rem;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn {
+  width: 70px;
+  height: 70px;
+}
+
+button svg {
+  fill: none;
+  transition: all .4s ease-in-out;
+}
+
+button:hover svg {
+  fill: black;
+}
+
+.info-progress {
+  margin-top: 30px;
+  width: 100%;
+  height: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.info-progress__play {
+  background: linear-gradient(rgb(57, 48, 48), gray);
+  width: 0%;
+  height: 100%;
+}
+
+.info-speed {
+  padding: .5rem;
+  background-color: aliceblue;
+  width: 20%;
+  margin: 20px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.info-speed:hover {
+  background-color: gray;
+  color: aliceblue;
+}
+
+main.playing .info-progress,
+main.playing .info-speed {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+  .info-speed {
+    width: 5%;
+    padding: .2rem;
+  }
+
+  .info-progress{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .info-container {
+    padding: 1rem;
+  }
+}

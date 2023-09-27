@@ -1,0 +1,29 @@
+{
+  "songs": [
+    {
+      "title": "First Hunter",
+      "audio": "/audios/FirstHunter.flac",
+      "cover": "/images/bloodborne.jpg"
+    },
+    {
+      "title": "Epilogue",
+      "audio": "audios/24. Epilogue.mp3",
+      "cover": "images/darksouls.jpg"
+    },
+    {
+      "title": "Bleach",
+      "audio": "audios/Nothing_Can_Be_Explained_TYBW_REMIX_2022_Bleach_TYBW_Ep_kgS4ATBmHWw_140.mp3",
+      "cover": "images/bleach.png"
+    },
+    {
+      "title": "Guts Theme",
+      "audio": "audios/Gwyn_ Lord of Cinder - Dark Souls [Piano Tutorial] (Synthesia) __ DS Music(MP3_320K).mp3",
+      "cover": "images/berserk.jpg"
+    },
+    {
+      "title": "vinland saga",
+      "audio": "audios/VINLAND_SAGA_OST_-_Somewhere_Else_Edited_Ver.mp3",
+      "cover": "images/vinlannd.png"
+    }
+  ]
+}

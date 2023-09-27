@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <main class="music-container">
+    <div class="image-container"></div>
+    <div class="info-container">
+      <audio id="audio"></audio>
+      <div class="info-title">
+        <h2>Music Name</h2>
+      </div>
+      <div class="info-btns">
+        <button class="prev-btn"><svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 12L18.25 5.75V18.25L9.75 12Z"></path>
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.75 5.75V18.25"></path>
+        </svg>
+        </button>
+
+        <button class="play-btn"><svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.25 12L5.75 5.75V18.25L18.25 12Z"></path>
+        </svg>
+        </button>
+
+        <button class="next-btn">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.25 12L5.75 5.75V18.25L14.25 12Z"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.25 5.75V18.25"></path>
+          </svg>
+          
+        </button>
+      </div>
+      <div class="info-progress">
+        <div class="info-progress__play"></div>
+      </div>
+      <div class="info-speed">
+        <h4>1 X</h4>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
